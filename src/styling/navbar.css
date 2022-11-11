@@ -24,9 +24,10 @@
     display: flex;
     padding:20px 80px;
     align-items: center;
+    margin-top: -2% ;
   }
   .scrolled nav li a {
-    color: #212121 !important;
+    color: #212121 ;
   }
   .scrolled .contact_btn {
     background-color: #212121;

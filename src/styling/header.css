@@ -9,6 +9,7 @@
 }
 .image_box img {
   width: 85%;
+  object-fit: cover;
 }
 
 .img img {

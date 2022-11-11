@@ -21,44 +21,12 @@
 }
 @media only screen and (max-width: 768px) {
   .card_container {
-    display: flex;
-    gap: 1.5rem;
-  }
-}
-
-.countries {
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
-    margin: auto;
-    margin-top: 10%;
-  }
-  .covImg {
-    width: 500px;
-  }
-  .covImg img {
-    width: 100%;
-    position: sticky;
-    top: 20%;
-  }
-  
-  .countries input {
-    border: none;
-    border-radius: 24px;
-    padding: 15px;
-    width: 80%;
-    outline: none;
-    box-shadow: 2px 2px 8px #44b564;
+    gap: 0.5rem;
   }
   .countries_state {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
   }
-  .country_card {
-    border: 1px solid #44b564;
-    width: 80%;
-    border-radius: 24px;
-    padding: 12px 15px;
-  }
-  
+}
