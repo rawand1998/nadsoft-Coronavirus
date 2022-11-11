@@ -6,7 +6,9 @@ import {
   FaSignOutAlt,
   FaRegEnvelope,
   FaHandHoldingWater,
+  
 } from "react-icons/fa";
+import { BsPersonDash } from "react-icons/bs";
 import snaz from "../images/snaz.png";
 function NavBar() {
   const menuRef = useRef(null);
@@ -48,7 +50,7 @@ function NavBar() {
           </li>
           <li>
             <a href="" onClick={hide_menu}>
-              <img src={snaz} alt="" className="snaz_img" /> Symptoms
+              <BsPersonDash /> Profile
             </a>
           </li>
           <li>
