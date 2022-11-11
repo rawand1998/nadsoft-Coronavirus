@@ -1,9 +1,10 @@
+import NavBar from './Components/Navbar';
 import './styling/index'
 
 function App() {
   return (
-    <div className="App">
-     
+    <div>
+     <NavBar/>
     </div>
   );
 }
