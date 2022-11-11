@@ -1,0 +1,27 @@
+.card_container {
+  display: flex;
+  gap: 2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: rgb(148, 39, 93);
+  cursor: pointer;
+}
+.card span:nth-child(1) {
+  color: #44b564;
+  text-shadow: 2px 2px 8px #44b564;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.card span:nth-child(2) {
+  color: #212121;
+}
+@media only screen and (max-width: 768px) {
+  .card_container {
+    display: flex;
+    gap: 1.5rem;
+  }
+}
