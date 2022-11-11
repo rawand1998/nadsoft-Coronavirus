@@ -12,14 +12,16 @@
 .logo {
   border-bottom: 1px solid #fff;
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 28px;
   text-align: center;
+  margin-top: 1%;
 }
 .logo span {
   font-weight: 600;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+
 }
 .logo span > span {
   color: #ff5151;
