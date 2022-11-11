@@ -36,56 +36,53 @@ function Main() {
       {error ? (
         <Error errorMsg={error} />
       ) : (
-        <>
-          <Header />
-          <div className="global_state">
-            <h2>Global Statistic</h2>
-
-            <StatisticsCard
-              TotalConfirmed={data?.Global?.TotalConfirmed}
-              TotalDeaths={data?.Global?.TotalDeaths}
-              TotalRecovered={data?.Global?.TotalRecovered}
+        <div className="main_contents">
+          <div className="countires_global">
+            <h2>Global Country Statistics</h2>
+            <input
+              placeholder="Search Country"
+              type="text"
+              value={search || ""}
+              onChange={(e) => setSearch(e.target.value)}
+              onKeyUp={onSearch}
             />
+
+            {items ? (
+              items.map(
+                ({
+                  ID,
+                  Country,
+                  TotalConfirmed,
+                  TotalDeaths,
+                  TotalRecovered,
+                }) => (
+                  <div className="country_cards">
+                    <StatisticsCard
+                      key={ID}
+                      Country={Country}
+                      TotalConfirmed={TotalConfirmed}
+                      TotalDeaths={TotalDeaths}
+                      TotalRecovered={TotalRecovered}
+                    />
+                  </div>
+                )
+              )
+            ) : (
+              <p className="error">countries not found</p>
+            )}
           </div>
-          <div className="countries">
-            <div className="countries_state">
-              <h2>Gobal country statics</h2>
-              <input
-                placeholder="Search Country"
-                type="text"
-                value={search || ""}
-                onChange={(e) => setSearch(e.target.value)}
-                onKeyUp={onSearch}
+
+          <div className="global_statistics">
+            <h2>Global Statistic</h2>
+            <div className="total_statistic">
+              <StatisticsCard
+                TotalConfirmed={data?.Global?.TotalConfirmed}
+                TotalDeaths={data?.Global?.TotalDeaths}
+                TotalRecovered={data?.Global?.TotalRecovered}
               />
-
-              {items
-                ? items.map(
-                    ({
-                      ID,
-                      Country,
-                      TotalConfirmed,
-                      TotalDeaths,
-                      TotalRecovered,
-                    }) => (
-                      <div className="country_card">
-                        <StatisticsCard
-                          key={ID}
-                          Country={Country}
-                          TotalConfirmed={TotalConfirmed}
-                          TotalDeaths={TotalDeaths}
-                          TotalRecovered={TotalRecovered}
-                        />
-                      </div>
-                    )
-                  )
-                :<p className="error">countries not found</p> }
-            </div>
-
-            <div className="covImg">
-              <img src={img} alt="" />
             </div>
           </div>
-        </>
+        </div>
       )}
     </div>
   );

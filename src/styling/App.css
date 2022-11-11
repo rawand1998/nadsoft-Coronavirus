@@ -1,0 +1,20 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+ 
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://media.istockphoto.com/id/1213840577/photo/2020-coronavirus-pandemic-banner.jpg?b=1&s=170667a&w=0&k=20&c=xTsWVRjKPv7j2Tf_ZbV9AfNs4K6EqgjkH_rpNX3PQyg=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+}

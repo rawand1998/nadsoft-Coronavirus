@@ -1,13 +1,12 @@
-import Header from './Components/Header';
-import Main from './Components/Main';
-import NavBar from './Components/Navbar';
-import './styling/index'
+import Main from "./Components/Main";
+import NavBar from "./Components/Navbar";
+import "./styling/index";
 
 function App() {
   return (
-    <div>
-     <NavBar/>
-     <Main/>
+    <div className="app">
+      <NavBar />
+      <Main />
     </div>
   );
 }

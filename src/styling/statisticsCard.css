@@ -1,6 +1,6 @@
 .card_container {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 .card {
   display: flex;
@@ -11,13 +11,13 @@
   cursor: pointer;
 }
 .card span:nth-child(1) {
-  color: #44b564;
+  color: #ffff;
   text-shadow: 2px 2px 8px #44b564;
   font-weight: 600;
   font-size: 1rem;
 }
 .card span:nth-child(2) {
-  color: #212121;
+  color: #ffff;
 }
 @media only screen and (max-width: 768px) {
   .card_container {
