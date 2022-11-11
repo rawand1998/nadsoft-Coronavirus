@@ -5,6 +5,7 @@ import "./styling/index";
 function App() {
   return (
     <div className="app">
+   
       <NavBar />
       <Main />
     </div>

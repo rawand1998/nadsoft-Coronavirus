@@ -1,23 +1,19 @@
 import React, { useState, useRef, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import {
+  FaHome,
+  FaInfoCircle,
+  FaSignOutAlt,
+  FaRegEnvelope,
+  FaHandHoldingWater,
+  
+} from "react-icons/fa";
+import { BsPersonDash } from "react-icons/bs";
+import snaz from "../images/snaz.png";
 function NavBar() {
-  const [scrolled, setScrolled] = useState(false);
   const menuRef = useRef(null);
   const removeShadw = useRef(null);
   const [toggle, setToggle] = useState(false);
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 80) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const toggleMenu = () => {
     menuRef.current.classList.toggle("show__menu");
@@ -28,12 +24,10 @@ function NavBar() {
     removeShadw.current.classList.remove("show__menu");
   };
   return (
-    <div
-      className={scrolled ? "navbar_container scrolled" : "navbar_container"}
-    >
+    <div className="navbar_container">
       <div className="logo">
         <span>
-          Coronavirus <span> COVID19</span>
+          <span> COVID19</span>
         </span>
       </div>
       <div className="menu" ref={menuRef}>
@@ -41,27 +35,32 @@ function NavBar() {
           <li>
             <a href="" onClick={hide_menu} className="active">
               {" "}
-              Home
+              <FaHome /> Home
             </a>
           </li>
           <li>
             <a href="" onClick={hide_menu}>
-              What we do
+              <FaInfoCircle /> What we do
             </a>
           </li>
           <li>
             <a href="" onClick={hide_menu}>
-              Prevention
+              <FaHandHoldingWater /> Prevention
             </a>
           </li>
           <li>
             <a href="" onClick={hide_menu}>
-              Symptoms
+              <BsPersonDash /> Profile
             </a>
           </li>
           <li>
             <a href="" onClick={hide_menu}>
-              Contact Us
+              <FaRegEnvelope /> Contact Us
+            </a>
+          </li>
+          <li>
+            <a href="" onClick={hide_menu}>
+              <FaSignOutAlt /> Logout
             </a>
           </li>
         </nav>
