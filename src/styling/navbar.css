@@ -1,7 +1,7 @@
 .navbar_container {
   display: flex;
   align-items: center;
-  width: 20%;
+  width: 15%;
   position: fixed;
   padding-top: 25px;
   color: #fff;
@@ -21,7 +21,6 @@
   color: #fff;
   font-size: 20px;
   cursor: pointer;
-
 }
 .logo span > span {
   color: #ff5151;

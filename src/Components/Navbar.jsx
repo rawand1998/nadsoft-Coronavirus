@@ -25,7 +25,7 @@ function NavBar() {
     <div className="navbar_container">
       <div className="logo">
         <span>
-          Coronavirus <span> COVID19</span>
+          <span> COVID19</span>
         </span>
       </div>
       <div className="menu" ref={menuRef}>

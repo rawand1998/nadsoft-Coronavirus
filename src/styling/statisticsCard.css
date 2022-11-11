@@ -12,12 +12,12 @@
 }
 .card span:nth-child(1) {
   color: #ffff;
-  text-shadow: 2px 2px 8px #44b564;
+  text-shadow: 2px 2px 8px #ff5151;
   font-weight: 600;
   font-size: 1rem;
 }
 .card span:nth-child(2) {
-  color: #ffff;
+  color: #fff;
 }
 @media only screen and (max-width: 768px) {
   .card_container {
