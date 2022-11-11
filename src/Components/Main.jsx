@@ -36,8 +36,10 @@ function Main() {
       {error ? (
         <Error errorMsg={error} />
       ) : (
-        <div className="main_contents">
-          <div className="countires_global">
+        <div className="">
+          <h1>gvfdgf</h1>
+          <h1>fvfv</h1>
+          {/* <div className="countires_global">
             <h2>Global Country Statistics</h2>
             <input
               placeholder="Search Country"
@@ -81,7 +83,7 @@ function Main() {
                 TotalRecovered={data?.Global?.TotalRecovered}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       )}
     </div>
