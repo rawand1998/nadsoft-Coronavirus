@@ -6,7 +6,7 @@
   padding-top: 25px;
   color: #fff;
   flex-direction: column;
-  background-color: #131736;
+  background-color: #166063;
   border-right: 1px solid #fff;
 }
 .logo {
@@ -33,14 +33,14 @@
   justify-content: center;
   width: 60%;
   height: 100vh;
+  flex-direction: column;
   margin-top: -20%;
 }
-.menu nav {
-  display: flex;
 
-  list-style: none;
-  gap: 4rem;
+.menu nav li {
+  display: flex;
   flex-direction: column;
+  gap: 4rem;
 }
 .menu nav li a {
   text-decoration: none;
@@ -69,6 +69,9 @@ nav li a:hover {
   color: #fff0;
 }
 @media only screen and (max-width: 768px) {
+  .logo {
+    border-bottom: none;
+  }
   .mobile__menu {
     display: block;
   }
@@ -79,6 +82,7 @@ nav li a:hover {
     color: #fff;
     font-size: 28px;
     cursor: pointer;
+    margin-left: -20%;
   }
   .show__menu {
     display: flex !important;
@@ -86,7 +90,7 @@ nav li a:hover {
     top: 0;
     right: 0;
     width: 100%;
-    height: 100vh;
+    height: 115vh;
     z-index: 1000;
     display: none;
     line-height: 48px;
@@ -94,7 +98,9 @@ nav li a:hover {
     justify-content: center;
     align-items: center;
     background-color: #131736;
+    padding-top: 50%;
   }
+
   .show__menu nav {
     flex-direction: column;
   }
@@ -103,5 +109,8 @@ nav li a:hover {
     justify-content: space-between;
     width: 100%;
     height: 80px;
+  }
+  .logo span > span {
+    margin-left: -75%;
   }
 }

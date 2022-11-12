@@ -6,23 +6,28 @@ import {
   FaSignOutAlt,
   FaRegEnvelope,
   FaHandHoldingWater,
-  
 } from "react-icons/fa";
 import { BsPersonDash } from "react-icons/bs";
-import snaz from "../images/snaz.png";
 function NavBar() {
   const menuRef = useRef(null);
   const removeShadw = useRef(null);
-  const [toggle, setToggle] = useState(false);
+  const [active, setActive] = useState("Home");
 
   const toggleMenu = () => {
     menuRef.current.classList.toggle("show__menu");
-    setToggle(true);
   };
   const hide_menu = () => {
-    console.log("hi");
+
     removeShadw.current.classList.remove("show__menu");
   };
+  const menuList = [
+    { name: "Home", icon: <FaHome /> },
+    { name: "About", icon: <FaInfoCircle /> },
+    { name: "Prevention", icon: <FaHandHoldingWater /> },
+    { name: "Profile", icon: <BsPersonDash /> },
+    { name: "Contact Us", icon: <FaRegEnvelope /> },
+    { name: "Logout", icon: <FaSignOutAlt /> },
+  ];
   return (
     <div className="navbar_container">
       <div className="logo">
@@ -33,35 +38,17 @@ function NavBar() {
       <div className="menu" ref={menuRef}>
         <nav>
           <li>
-            <a href="" onClick={hide_menu} className="active">
-              {" "}
-              <FaHome /> Home
-            </a>
-          </li>
-          <li>
-            <a href="" onClick={hide_menu}>
-              <FaInfoCircle /> What we do
-            </a>
-          </li>
-          <li>
-            <a href="" onClick={hide_menu}>
-              <FaHandHoldingWater /> Prevention
-            </a>
-          </li>
-          <li>
-            <a href="" onClick={hide_menu}>
-              <BsPersonDash /> Profile
-            </a>
-          </li>
-          <li>
-            <a href="" onClick={hide_menu}>
-              <FaRegEnvelope /> Contact Us
-            </a>
-          </li>
-          <li>
-            <a href="" onClick={hide_menu}>
-              <FaSignOutAlt /> Logout
-            </a>
+            {menuList.map(({ name, icon }) => (
+              <a
+                key={name}
+                href="/"
+                onClick={hide_menu}
+                className={active === name ? "active" : ""}
+              >
+                {" "}
+                {icon} {name}
+              </a>
+            ))}
           </li>
         </nav>
       </div>

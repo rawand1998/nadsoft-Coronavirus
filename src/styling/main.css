@@ -1,8 +1,7 @@
 .main {
   width: 100%;
   display: flex;
-  margin-left: 20%;
-  background-color: #303665;
+  margin-left: 10%;
   flex-direction: column;
 }
 .main_contents {
@@ -10,61 +9,11 @@
   flex-direction: column;
   height: 100vh;
 }
-.main_header {
-  background-color: #131736;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #fff;
-  width: 108%;
-  margin-left: -8%;
-  padding-left: 5px;
-}
-.main h2 {
-  color: #fff;
-  text-align: left;
-  padding: 25px;
-}
-.icons {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin-right: 5%;
-  color: #fff;
-}
-.icons a {
-  width: 30px;
-  height: 30px;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  padding: 8px;
-  background: rgba(217, 217, 217, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.user {
-  width: 35px;
-  height: 35px;
-  object-fit: cover;
-  border-radius: 50%;
-}
+
 .images_block {
-  padding: 80px 20px;
   width: 60%;
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.viruse {
-  width: 80%;
-  height: 50%;
-  animation: updown 3s linear infinite alternate;
-}
+
 .img_top {
   position: absolute;
   top: 50px;
@@ -85,6 +34,7 @@
 .stats {
   display: flex;
   justify-content: space-between;
+  margin-top: 5%;
 }
 .statistics {
   width: 80%;
@@ -104,7 +54,7 @@
   align-items: center;
   flex-direction: column;
   width: 80%;
-  background-color: #131736;
+  background-color: #166063;
 }
 .country_status {
   display: flex;
@@ -121,39 +71,50 @@
   box-shadow: 2px 2px 8px #131736;
 }
 .country_cards {
-  border: 1px solid #ffff;
+  border: 1px solid #fff;
   width: 100%;
   border-radius: 24px;
   padding: 15px 20px;
-  background-color: transparent;
+  background-color: #166063;
 }
 .country_status h2 {
   color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
-  .images_block {
+  .main {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .main_header {
+    margin-top: 15%;
+    width: 100%;
+    margin-left: 0%;
     display: none;
+
   }
   .global_total_status {
     width: 100%;
+    margin-left: -22%;
+    margin-top: 50%;
   }
   .country_status {
     display: flex;
     width: 100%;
     flex-direction: column;
     gap: 1rem;
+    margin-left: -35%;
   }
   .country_cards {
     border: 1px solid #ffff;
-    width: 120%;
+    width: 109%;
     border-radius: 24px;
-    padding: 15px 20px;
     background-color: transparent;
   }
-  .stats {
-    width: 100%;
-    margin-left: -15%;
-    padding: 0;
+  .country_status input {
+    width: 109%;
   }
 }
