@@ -33,14 +33,14 @@
   justify-content: center;
   width: 60%;
   height: 100vh;
+  flex-direction: column;
   margin-top: -20%;
 }
-.menu nav {
-  display: flex;
 
-  list-style: none;
-  gap: 4rem;
+.menu nav li {
+  display: flex;
   flex-direction: column;
+  gap: 4rem;
 }
 .menu nav li a {
   text-decoration: none;

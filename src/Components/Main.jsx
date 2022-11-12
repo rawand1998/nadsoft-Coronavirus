@@ -1,15 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import StatisticsCard from "./Common/StatisticsCard";
-import img from "../images/amico.svg";
-import Header from "./Header";
 import user from "../images/user.jpg";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import vri from "../images/vri.png";
-import virus from "../images/Vector (1).png";
 import Error from "./Common/Error";
-import vir2 from "../images/vir3.png";
-import imgs from "../images/Premium Vector _ Earth with medical mask.jpg";
+import Header from "./Header";
 function Main() {
   const [data, setData] = useState("");
   const [countries, setCountries] = useState();
@@ -43,18 +38,8 @@ function Main() {
         <Error errorMsg={error} />
       ) : (
         <div className="main_contents">
-          <div className="main_header">
-            <h2>Dealy Viruses</h2>
-            <div className="icons">
-              <a href="">
-                <FaFacebookF className="icon" />
-              </a>
-              <a href="">
-                <FaLinkedinIn className="icon" />
-              </a>
-              <img src={user} alt="" className="user" />
-            </div>
-          </div>
+          <Header/>
+       
           <div className="stats">
             <div className="images_block"></div>
             <div className="statistics">
