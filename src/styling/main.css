@@ -10,6 +10,16 @@
   height: 100vh;
 }
 
+.images_block {
+  width: 60%;
+}
+
+.img_top {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
 @keyframes updown {
   0% {
     transform: translateY(-20px);
@@ -24,6 +34,7 @@
 .stats {
   display: flex;
   justify-content: space-between;
+  margin-top: 5%;
 }
 .statistics {
   width: 80%;
@@ -80,10 +91,15 @@
   }
   .main_header {
     margin-top: 15%;
+    width: 100%;
+    margin-left: 0%;
+    display: none;
+
   }
   .global_total_status {
     width: 100%;
     margin-left: -22%;
+    margin-top: 50%;
   }
   .country_status {
     display: flex;
