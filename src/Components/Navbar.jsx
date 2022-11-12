@@ -40,7 +40,7 @@ function NavBar() {
           </li>
           <li>
             <a href="" onClick={hide_menu}>
-              <FaInfoCircle /> What we do
+              <FaInfoCircle /> About
             </a>
           </li>
           <li>

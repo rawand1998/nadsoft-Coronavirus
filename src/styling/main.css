@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   margin-left: 20%;
-  background-color: #303665;
+  /* background-color: #303665; */
   flex-direction: column;
 }
 .main_contents {
@@ -62,8 +62,9 @@
 }
 .viruse {
   width: 80%;
-  height: 50%;
-  animation: updown 3s linear infinite alternate;
+  height: 80%;
+  /* animation: updown 3s linear infinite alternate; */
+  /* border-radius: 50%; */
 }
 .img_top {
   position: absolute;
@@ -121,11 +122,11 @@
   box-shadow: 2px 2px 8px #131736;
 }
 .country_cards {
-  border: 1px solid #ffff;
+  border: 1px solid #131736;
   width: 100%;
   border-radius: 24px;
   padding: 15px 20px;
-  background-color: transparent;
+  background-color: #131736;
 }
 .country_status h2 {
   color: #fff;
