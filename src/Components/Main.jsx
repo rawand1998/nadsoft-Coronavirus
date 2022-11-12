@@ -9,7 +9,7 @@ import vri from "../images/vri.png";
 import virus from "../images/Vector (1).png";
 import Error from "./Common/Error";
 import vir2 from "../images/vir3.png";
-import imgs from '../images/Premium Vector _ Earth with medical mask.jpg'
+import imgs from "../images/Premium Vector _ Earth with medical mask.jpg";
 function Main() {
   const [data, setData] = useState("");
   const [countries, setCountries] = useState();
@@ -56,11 +56,7 @@ function Main() {
             </div>
           </div>
           <div className="stats">
-            <div className="images_block">
-              {/* <img src={vir2} alt="" className="img_top" /> */}
-              {/* <img src={imgs} className="viruse" alt="" /> */}
-              {/* <img src={virus} alt="" className="img_bottom" /> */}
-            </div>
+            <div className="images_block"></div>
             <div className="statistics">
               <div className="global_total_status">
                 <h2>Global Statistic</h2>
