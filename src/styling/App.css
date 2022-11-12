@@ -12,5 +12,11 @@
   font-family: Cursive;
 }
 body {
-  background-color: #303665;
+  background-image: url('../images/coronavirus-vaccine.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 0.5;
+  background-attachment: fixed;
 }

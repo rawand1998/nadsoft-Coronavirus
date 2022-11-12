@@ -58,7 +58,7 @@ function Main() {
           <div className="stats">
             <div className="images_block">
               {/* <img src={vir2} alt="" className="img_top" /> */}
-              <img src={imgs} className="viruse" alt="" />
+              {/* <img src={imgs} className="viruse" alt="" /> */}
               {/* <img src={virus} alt="" className="img_bottom" /> */}
             </div>
             <div className="statistics">
